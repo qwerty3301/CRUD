@@ -1,0 +1,5 @@
+[database]
+Password = "root"
+Username = "postgres"
+Port     = "5432"
+Database = "postgres"
