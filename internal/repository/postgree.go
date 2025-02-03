@@ -36,7 +36,7 @@ func (p *DatabaseConfig) NewPostgreDB(config *DatabaseConfig) *DatabaseConfig {
 }
 
 func (p *DatabaseConfig) Connect() *pgx.Conn {
-	conn, err := pgx.Connect(context.Background(), fmt.Sprintf("postgres://%s:%s@localhost:%s/%s",
+	conn, err := pgx.Connect(context.Background(), fmt.Sprintf("postgres://%s:%s@db:%s/%s",
 		p.Username, p.Password, p.Port, p.Database))
 	if err != nil {
 		log.Fatalf("Unable to connect to database: %v", err)
