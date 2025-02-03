@@ -9,6 +9,7 @@
 - Gin web framework
 - JWT tokens
 - TOML for config
+- Docker
 
 How to use:
 - /register (username, email, password) to create a new user in the database
